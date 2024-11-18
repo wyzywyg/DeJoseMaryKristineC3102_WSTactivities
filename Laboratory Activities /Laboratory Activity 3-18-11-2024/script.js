@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const textInput = document.getElementById('textInput');
     const wordCount = document.getElementById('wordCount');
