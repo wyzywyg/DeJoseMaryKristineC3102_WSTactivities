@@ -1,1 +1,137 @@
+body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .newspaper-container {
+            width: 90vw;
+            max-width: 1400px;
+            height: 95vh;
+            background-color: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-rows: auto 1fr;
+            overflow: hidden;
+        }
+
+        .newspaper-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 3px solid #000;
+        }
+
+        .newspaper-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .newspaper-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        .main-story {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .main-story h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3em;
+        }
+
+        .main-story p {
+            font-size: 13px;
+            text-align: justify;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border: 4px solid #000;
+        }
+
+        .story-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .story-image.active {
+            opacity: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-left: 2px solid #ddd;
+            padding-left: 20px;
+        }
+
+        .sidebar-section {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .audio-control {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .audio-control button {
+            font-family: 'Playfair Display', serif;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 15px;
+            text-align: justify;
+            border-left: 4px solid #000;
+            padding-left: 15px;
+            margin: 10px 0;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .color-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
